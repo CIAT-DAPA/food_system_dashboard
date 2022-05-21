@@ -31,7 +31,15 @@ function Determinants() {
                                     }
                                 };
                             });
-                            setPlots({pies:pie_charts});
+                            const bar_chart = {
+                                type: "bar",
+                                series: data3.values,
+                                options: {
+                                    legend: { show: false },
+                                    title: { display: true, text: item.title }
+                                }
+                            };
+                            setPlots({ pies: pie_charts, bars: bar_chart });
                         });
                     }
                 );
@@ -136,6 +144,18 @@ function Determinants() {
                 preparación, conservación e inocuidad de los alimentos, es casi completa. Los servicios de recolección de basuras e
                 internet tenían en 2018 una cobertura del 99,1% y del 72%, respectivamente.
             </p>
+            <div className='row'>
+                <div className='col-lg-12'>
+                    {plots ?
+                        <Chart
+                            options={plots.pies[3].options}
+                            series={plots.pies[3].series}
+                            type="donut"
+                        /> :
+                        <></>
+                    }
+                </div>
+            </div>
         </article>
     );
 }

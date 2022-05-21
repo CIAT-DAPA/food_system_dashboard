@@ -50,7 +50,7 @@
         }
     ],
     "bars":{
-        "value":[
+        "values":[
             {
                 "x":"Energia electrica",
                 "y":99.7
