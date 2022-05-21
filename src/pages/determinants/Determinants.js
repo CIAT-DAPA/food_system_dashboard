@@ -11,7 +11,6 @@ function Determinants() {
     const load_highlights = () =>{
         Infographic.list("determinantes_info.json").then(
             (data)=>{
-                console.log(data);
                 setData(data);
             }
         );
@@ -29,12 +28,7 @@ function Determinants() {
             <h2>
                 Datos claves
             </h2>
-            <ul>
-                <li>
-                    <img />
-                    La migracion nacional y extranjera hacia Cali aumenta el numero de consumidores vulnerables y determina habitos de consumo
-                </li>
-            </ul>
+            <Highlight data={data} />
         </>
     );
 }
