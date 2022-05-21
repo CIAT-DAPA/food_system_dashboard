@@ -33,10 +33,10 @@ function Determinants() {
                             });
                             const bar_chart = {
                                 type: "bar",
-                                series: data3.values,
+                                series: data3.bars.values ,
                                 options: {
                                     legend: { show: false },
-                                    title: { display: true, text: item.title }
+                                    title: { display: true, text: "Cobertura de servicios públicos" }
                                 }
                             };
                             setPlots({ pies: pie_charts, bars: bar_chart });
@@ -148,8 +148,8 @@ function Determinants() {
                 <div className='col-lg-12'>
                     {plots ?
                         <Chart
-                            options={plots.pies[3].options}
-                            series={plots.pies[3].series}
+                            options={plots.bars.options}
+                            series={plots.bars.series}
                             type="donut"
                         /> :
                         <></>

@@ -49,32 +49,21 @@
             ]
         }
     ],
-    "bars":{
-        "values":[
-            {
-                "x":"Energia electrica",
-                "y":99.7
-            },
-            {
-                "x":"Acueducto",
-                "y":99.0
-            },
-            {
-                "x":"Alcantarillado",
-                "y":97.8
-            },
-            {
-                "x":"Gas",
-                "y":89.6
-            },
-            {
-                "x":"Recolección de basuras",
-                "y":99.1
-            },
-            {
-                "x":"Internet",
-                "y":72
-            }
+    "bars": {
+        "values": [
+            99.7,
+            99.0,
+            97.8,
+            89.6,
+            99.172
+        ],
+        "categories": [
+            "Energia electrica",
+            "Acueducto",
+            "Alcantarillado",
+            "Gas",
+            "Recolección de basuras",
+            "Internet"
         ]
     }
 }
