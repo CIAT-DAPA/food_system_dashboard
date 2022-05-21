@@ -22,7 +22,7 @@ function Determinants() {
         );
     }
     React.useEffect(() => {
-        load_highlights();
+        load_data();
         return () => undefined;
     }, []);
 
@@ -40,7 +40,12 @@ function Determinants() {
             </h2>
             <Highlight data={data.info} />
             <Sources items={data.sources} />
-
+            <h2>Determinantes ambientales</h2>
+            <p>
+                El 70% del territorio municipal de Cali (56.400 ha) es zona rural, constituida
+                esencialmente por laderas ubicadas entre los 1.200 y los 1.800 m s. n. m. La mayor parte de estas laderas
+                corresponden al Parque Nacional Natural Farallones de Cali y a zona de reserva forestal.
+            </p>
         </article>
     );
 }
