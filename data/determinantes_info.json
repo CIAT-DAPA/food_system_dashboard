@@ -1,14 +1,24 @@
 [
     {
         "hightlight": {
-            "icon": "assets/img/driver 2.png",
+            "icon": "icons/driver 2.png",
             "content": "La migración nacional y extranjera hacia Cali aumenta el numero de consumidores vulnerables y determina hábitos de consumo"
         },
         "key_data": [
             {
-                "icon": "assets/img/driver 2.png",
-                "value": 30,
-                "content": "La migración nacional y extranjera hacia Cali aumenta el numero de consumidores vulnerables y determina hábitos de consumo"
+                "icon": "icons/componente 3.png",
+                "value": "147.908",
+                "content": "personas desplazadas internamente entraran a Cali"
+            },
+            {
+                "icon": "icons/driver 2.png",
+                "value": "37%",
+                "content": "de las personas desplazadas en 2019 eran niños y jovenes, y viven en las zonas con mayor densidad de poblacion (estratos 1-3)"
+            },
+            {
+                "icon": "icons/3-tiendas.png",
+                "value": "71%",
+                "content": "dedicados al comerico informal"
             }
         ]
     }
