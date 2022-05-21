@@ -4,7 +4,7 @@ import Configuration from "../conf/Configuration";
 
 class DeterminantsData{
     get() {
-        const url = Configuration.get_url_data() + "determinants/plots.json";
+        const url = Configuration.get_url_data() + "determinants/charts.json";
         return axios
             .get(url, {})
             .then(response => {

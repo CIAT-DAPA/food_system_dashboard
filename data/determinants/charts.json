@@ -1,0 +1,80 @@
+{
+    "pies": [
+        {
+            "id": "territorio",
+            "title": "Territorio municipal",
+            "series": [
+                "Rural",
+                "Urbana"
+            ],
+            "labels": [
+                79,
+                21
+            ]
+        },
+        {
+            "id": "areas",
+            "title": "Áreas protegidas",
+            "series": [
+                "Zonas de reserva forestal",
+                "Parque nacional natural de los Farrallones"
+            ],
+            "labels": [
+                43.1,
+                56.9
+            ]
+        },
+        {
+            "id": "poblacion",
+            "title": "Población municipal",
+            "series": [
+                "Rural",
+                "Urbana"
+            ],
+            "labels": [
+                2.3,
+                97.7
+            ]
+        },
+        {
+            "id": "genero",
+            "title": "Genero de población",
+            "series": [
+                "Mujeres",
+                "Hombres"
+            ],
+            "labels": [
+                53.2,
+                46.8
+            ]
+        }
+    ],
+    "bars":{
+        "value":[
+            {
+                "x":"Energia electrica",
+                "y":99.7
+            },
+            {
+                "x":"Acueducto",
+                "y":99.0
+            },
+            {
+                "x":"Alcantarillado",
+                "y":97.8
+            },
+            {
+                "x":"Gas",
+                "y":89.6
+            },
+            {
+                "x":"Recolección de basuras",
+                "y":99.1
+            },
+            {
+                "x":"Internet",
+                "y":72
+            }
+        ]
+    }
+}
