@@ -3,8 +3,8 @@ import React from 'react';
 function KeySection(props) {
     return (
         <div className="col-lg-12">
-            <img src={props.icon} />
-            <h3>{props.content}</h3>
+            <img className="bd-placeholder-img rounded-circle" width="30" height="30" src={'/' + (props.icon ?? '')} />
+            <span> {props.content ?? ''}</span>
         </div>
     );
 }

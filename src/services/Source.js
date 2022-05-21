@@ -2,9 +2,9 @@ import axios from "axios";
 
 import Configuration from "../conf/Configuration";
 
-class Infographic{
+class Source{
     list(source) {
-        const url = Configuration.get_url_data() + source + "_highlights.json";
+        const url = Configuration.get_url_data() + source + "_sources.json";
         return axios
             .get(url, {})
             .then(response => {
@@ -13,4 +13,4 @@ class Infographic{
     };
 }
 
-export default new Infographic();
+export default new Source();
