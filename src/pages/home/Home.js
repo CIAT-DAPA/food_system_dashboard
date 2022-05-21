@@ -14,10 +14,10 @@ function Home() {
                 <img className='bd-placeholder-img' width="100%" height="100%" aria-hidden="true" alt="" src={intro} />
             </div>
             <br />
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Introducción</h2>
-                    <p class="lead text-justify">
+            <div className="row featurette">
+                <div className="col-md-7">
+                    <h2 className="featurette-heading">Introducción</h2>
+                    <p className="lead text-justify">
                         Este tablero busca presentar todos los componentes del sistema alimentario de Cali como ciudad-región,
                         para entender sus características, dinámicas y vulnerabilidades, con el fin de identificar oportunidades
                         de fortalecimiento y acción desde diferentes perspectivas.  Si bien el ejercicio se enfoca en el municipio de
@@ -29,24 +29,24 @@ function Home() {
                         de ruta necesaria para impulsar su transformación de modo sostenible.
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                <div className="col-md-5">
+                    <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
                         height="500" src={home_highlight1} role="img" aria-label="Placeholder: 500x500"
                         preserveAspectRatio="xMidYMid slice" focusable="false" />
 
                 </div>
             </div>
             <br />
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            <div className="row featurette">
+                <div className="col-md-5">
+                    <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
                         height="500" src={home_highlight2} role="img" aria-label="Placeholder: 500x500"
                         preserveAspectRatio="xMidYMid slice" focusable="false" />
 
                 </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Consideraciones sobre los sistemas alimentarios</h2>
-                    <p class="lead  text-justify">
+                <div className="col-md-7">
+                    <h2 className="featurette-heading">Consideraciones sobre los sistemas alimentarios</h2>
+                    <p className="lead  text-justify">
                         Un sistema alimentario describe todos los elementos y actividades relacionados con la producción, 
                         la transformación, el envasado, la distribución, la comercialización, el consumo y 
                         la eliminación de los alimentos, así como todos los insumos y productos asociados.
@@ -60,10 +60,10 @@ function Home() {
                 </div>
             </div>
             <br />
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Marco de análisis</h2>
-                    <p class="lead text-justify">
+            <div className="row featurette">
+                <div className="col-md-7">
+                    <h2 className="featurette-heading">Marco de análisis</h2>
+                    <p className="lead text-justify">
                     El marco de análisis utilizado para caracterizar este sistema (De Brauw et al., 2019, adaptado de HLPE, 2017) 
                     ya ha sido aplicado para entender sistemas alimentarios de otras ciudades y países de Asia, 
                     África y Latinoamérica. Este marco analítico considera tres grandes bloques de información: (a) 
@@ -77,8 +77,8 @@ function Home() {
                     en la seguridad alimentaria, y en las condiciones ambientales y socioeconómicas de la población en general.  
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                <div className="col-md-5">
+                    <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
                         height="500" src={home_highlight3} role="img" aria-label="Placeholder: 500x500"
                         preserveAspectRatio="xMidYMid slice" focusable="false" />
 
