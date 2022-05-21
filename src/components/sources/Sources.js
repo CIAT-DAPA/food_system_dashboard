@@ -7,9 +7,9 @@ function Sources(props) {
                 Fuentes:
             </h5>
             <ul>
-                {props.items.map((item, idx) => (
-                    <li><a target='_blank' href={item.url}>{item.title}</a></li>
-                )) ??
+                {props.items ? props.items.map((item, idx) => (
+                    <li key={idx}><a target='_blank' href={item.url}>{item.title}</a></li>
+                )) :
                     <></>
                 }
             </ul>

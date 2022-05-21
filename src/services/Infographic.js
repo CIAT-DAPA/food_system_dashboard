@@ -5,6 +5,7 @@ import Configuration from "../conf/Configuration";
 class Infographic{
     list(source) {
         const url = Configuration.get_url_infographics() + source + "_highlights.json";
+        console.log(url);
         return axios
             .get(url, {})
             .then(response => {
