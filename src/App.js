@@ -8,6 +8,7 @@ import Home from './pages/home/Home';
 import Determinants from './pages/determinants/Determinants';
 
 import './App.css';
+import Supplies from './pages/supplies/Supplies';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <Routes>
               <Route exact path='/' element={<Home />} />
               <Route path='/determinantes' element={<Determinants />} />
+              <Route path='/suministro_alimentos' element={<Supplies />} />
             </Routes>
           </Router>
         </div>

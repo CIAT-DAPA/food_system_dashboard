@@ -1,0 +1,25 @@
+[
+    {
+        "hightlight": {
+            "icon": "icons/driver 2.png",
+            "content": "Cali no es un municipio productor de alimentos, pero es un polo de consumo para el sistema alimentario del suroccidente del pais"
+        },
+        "key_data": [
+            {
+                "icon": "icons/componente 3.png",
+                "value": "80%",
+                "content": "de los granos secos que se comercializan en la ciudad son importados"
+            },
+            {
+                "icon": "icons/driver 2.png",
+                "value": "1317",
+                "content": "productores a pequeña escala en la zona periurbana"
+            },
+            {
+                "icon": "icons/3-tiendas.png",
+                "value": "65%",
+                "content": "de los productos provienen de los departamentos de Cauca y Narino"
+            }
+        ]
+    }
+]

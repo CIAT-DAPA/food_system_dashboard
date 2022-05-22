@@ -35,16 +35,13 @@ function Determinants() {
                                 type: "bar",
                                 series: [{ data: data3.bars.values }],
                                 options: {
-                                    
                                     xaxis: {
                                         categories: data3.bars.categories
                                     },
                                     legend: { show: false },
                                     title: { display: true, text: "Cobertura de servicios públicos" }
-
                                 }
                             };
-                            console.log(bar_chart);
                             setPlots({ pies: pie_charts, bars: bar_chart });
                         });
                     }

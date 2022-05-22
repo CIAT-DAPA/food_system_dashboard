@@ -26,7 +26,7 @@ function Nav() {
             <div className="nav-scroller py-1 mb-2">
                 <nav className="nav d-flex justify-content-between">
                     <a className="p-2 link-secondary" href="/determinantes">Determinantes</a>
-                    <a className="p-2 link-secondary" href="/suministro">Suministro de alimentos</a>
+                    <a className="p-2 link-secondary" href="/suministro_alimentos">Suministro de alimentos</a>
                     <a className="p-2 link-secondary" href="/entorno">Entorno alimentario</a>
                     <a className="p-2 link-secondary" href="/consumidor">Consumidor</a>
                     <a className="p-2 link-secondary" href="/dietas">Dietas</a>
