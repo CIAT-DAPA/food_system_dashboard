@@ -41,7 +41,7 @@ function Supplies() {
 
     const load_markets = () => {
         const source = "supplies/galerias_cali.geojson";
-        MapsData.list(source).then(
+        MapsData.get(source).then(
             (data) => {
                 console.log(data);
                 setPointsStorage(data.features);
@@ -57,7 +57,7 @@ function Supplies() {
     const changeFoodType = event => {
         const source = "supplies/" + event.value;
         MapsData.get(source).then((data) => {
-            setGeoProduction(data);
+            setGeoProduction({geo:data,key:event.label});
         });
     };
 
@@ -97,7 +97,7 @@ function Supplies() {
             <br />
             <div className="row">
                 <div className="col-lg-12">
-                    <Map key={"mapFood"} conf={map_production}  geo={geo_production} />
+                    <Map key={"mapFood"} conf={map_production}  geo={geo_production ? geo_production.geo: null} geo_key={geo_production ? geo_production.key: null} />
                 </div>
             </div>
             <h2>Almacenamiento y distribucción</h2>

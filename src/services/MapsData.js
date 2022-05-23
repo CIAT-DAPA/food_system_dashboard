@@ -5,6 +5,7 @@ import Configuration from "../conf/Configuration";
 class MapsData{
     get(source) {
         const url = Configuration.get_url_data() + source;
+        console.log(url);
         return axios
             .get(url, {})
             .then(response => {

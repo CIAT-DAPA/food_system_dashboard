@@ -16,7 +16,7 @@ function Map(props) {
                     </Marker>
                 )) :
                 <></>}
-            {props.geo ? <GeoJSON attribution="CIAT" key={"geo_municipalities"} data={props.geo} /> : <></>}
+            {props.geo ? <GeoJSON attribution="CIAT" key={props.geo_key} data={props.geo} /> : <></>}
         </MapContainer>
     );
 }
