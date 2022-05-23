@@ -9,12 +9,14 @@ import Map from '../../components/map/Map';
 
 
 import './Supplies.css';
+import MapsData from '../../services/MapsData';
 
 function Supplies() {
     const [infographic, setInfographics] = React.useState();
     const [map_production, setMapProduction] = React.useState({ center: [3.4427581, -76.5146652], zoom: 5, height: "500px" });
+    const [geo_production, setGeoProduction] = React.useState();
     const [map_storage, setMapStorage] = React.useState({ center: [3.4427581, -76.5146652], zoom: 12, height: "500px" });
-    const [optFoodType, setOptFoodType] = React.useState([{ label: "Frutas", value: "frutas" },
+    const [optFoodType, setOptFoodType] = React.useState([{ label: "Frutas", value: "FRUTAS.geojson" },
     { label: "Lácteos y huevos", value: "lacteos" },
     { label: "Tubérculos, raíces y plátanos", value: "tuberculos" },
     { label: "Carnes", value: "carnes" },
@@ -40,7 +42,12 @@ function Supplies() {
     }, []);
 
     const changeFoodType = event => {
-        //props.onChange(event);
+        const source = "supplies/" + event;
+        
+        MapsData.get(source).then((data) => {
+            console.log(data);
+            setGeoProduction(data);
+        });
     };
 
     return (
@@ -94,7 +101,7 @@ function Supplies() {
             </p>
             <div className="row">
                 <div className="col-lg-12">
-                    <Map key={"mapStorage"} conf={map_storage} />
+                    <Map key={"mapStorage"} conf={map_storage} geo={geo_production} />
                 </div>
             </div>
         </article>
