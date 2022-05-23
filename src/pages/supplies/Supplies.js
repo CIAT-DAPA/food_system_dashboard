@@ -40,7 +40,7 @@ function Supplies() {
     }
 
     const load_markets = () => {
-        const source = "supplies/galerias_cali.geojson";
+        const source = "supplies/GALERIAS.geojson";
         MapsData.get(source).then(
             (data) => {
                 console.log(data);
