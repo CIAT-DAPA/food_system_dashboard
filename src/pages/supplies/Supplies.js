@@ -15,14 +15,16 @@ function Supplies() {
     const [infographic, setInfographics] = React.useState();
     const [map_production, setMapProduction] = React.useState({ center: [3.4427581, -76.5146652], zoom: 5, height: "500px" });
     const [geo_production, setGeoProduction] = React.useState();
+    const [points_storage, setPointsStorage] = React.useState();
     const [map_storage, setMapStorage] = React.useState({ center: [3.4427581, -76.5146652], zoom: 12, height: "500px" });
     const [optFoodType, setOptFoodType] = React.useState([{ label: "Frutas", value: "FRUTAS.geojson" },
-    { label: "Lácteos y huevos", value: "lacteos" },
-    { label: "Tubérculos, raíces y plátanos", value: "tuberculos" },
-    { label: "Carnes", value: "carnes" },
-    { label: "Granos y cereales", value: "granos" },
-    { label: "Pescados", value: "pescados" },
-    { label: "Verduras y hortalizas", value: "verduras" }]);
+    { label: "Lácteos y huevos", value: "LACTEOS.geojson" },
+    { label: "Tubérculos, raíces y plátanos", value: "TUBERCULOS.geojson" },
+    { label: "Carnes", value: "CARNES.geojson" },
+    { label: "Granos y cereales", value: "GRANOS.geojson" },
+    { label: "Pescados", value: "PESCADOS.geojson" },
+    { label: "Procesados", value: "PROCESADOS.geojson" },
+    { label: "Verduras y hortalizas", value: "VERDURAS.geojson" }]);
 
     const load_data = () => {
         Infographic.list("supply").then(
@@ -30,8 +32,19 @@ function Supplies() {
                 Source.list("supply").then(
                     (data2) => {
                         setInfographics({ info: data, sources: data2 });
+                        load_markets();
                     }
                 );
+            }
+        );
+    }
+
+    const load_markets = () => {
+        const source = "supplies/galerias_cali.geojson";
+        MapsData.list(source).then(
+            (data) => {
+                console.log(data);
+                setPointsStorage(data.features);
             }
         );
     }
@@ -84,7 +97,7 @@ function Supplies() {
             <br />
             <div className="row">
                 <div className="col-lg-12">
-                    <Map key={"mapFood"} conf={map_production} />
+                    <Map key={"mapFood"} conf={map_production}  geo={geo_production} />
                 </div>
             </div>
             <h2>Almacenamiento y distribucción</h2>
@@ -99,7 +112,7 @@ function Supplies() {
             </p>
             <div className="row">
                 <div className="col-lg-12">
-                    <Map key={"mapStorage"} conf={map_storage} geo={geo_production} />
+                    <Map key={"mapStorage"} conf={map_storage} points={points_storage} />
                 </div>
             </div>
         </article>
