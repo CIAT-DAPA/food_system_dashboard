@@ -7,7 +7,8 @@ function Map(props) {
             <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-            {props.geo ? <GeoJSON attribution="" data={props.geo} /> : <GeoJSON attribution="" />}
+            {console.log(props.geo)}
+            {props.geo ? <GeoJSON attribution="CIAT" key={"geo_municipalities"} data={props.geo} /> : <GeoJSON attribution="" />}
         </MapContainer>
     );
 }

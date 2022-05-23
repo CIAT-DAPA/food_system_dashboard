@@ -42,10 +42,8 @@ function Supplies() {
     }, []);
 
     const changeFoodType = event => {
-        const source = "supplies/" + event;
-        
+        const source = "supplies/" + event.value;
         MapsData.get(source).then((data) => {
-            console.log(data);
             setGeoProduction(data);
         });
     };
