@@ -1,4 +1,5 @@
 import React from 'react';
+import L from "leaflet";
 
 import { MapContainer, TileLayer, GeoJSON, LayersControl, WMSTileLayer, Polygon, CircleMarker, Tooltip, Marker, Popup } from 'react-leaflet'
 function Map(props) {
@@ -9,7 +10,8 @@ function Map(props) {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             {props.points ?
                 props.points.map((item, idx) => (
-                    <Marker key={'point_' + idx} position={[item.geometry.coordinates[1], item.geometry.coordinates[0]]}>
+                    <Marker key={'point_' + idx} position={[item.geometry.coordinates[1], item.geometry.coordinates[0]]}
+                        icon={L.icon({ iconUrl: "/icons/"+ item.properties.Type + ".png",iconSize: [40, 40] })}>
                         <Popup>
                             <span>Galeria: {item.properties.Name}</span>
                         </Popup>
