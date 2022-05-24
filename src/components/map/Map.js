@@ -11,7 +11,7 @@ function Map(props) {
             {props.points ?
                 props.points.map((item, idx) => (
                     <Marker key={'point_' + idx} position={[item.geometry.coordinates[1], item.geometry.coordinates[0]]}
-                        icon={L.icon({ iconUrl: "/icons/"+ item.properties.Type + ".png",iconSize: [40, 40] })}>
+                        icon={L.icon({ iconUrl: "icons/"+ item.properties.Type + ".png",iconSize: [40, 40] })}>
                         <Popup>
                             <span>Galeria: {item.properties.Name}</span>
                         </Popup>
