@@ -43,7 +43,6 @@ function Supplies() {
         const source = "supplies/GALERIAS.geojson";
         MapsData.get(source).then(
             (data) => {
-                console.log(data);
                 setPointsStorage(data.features);
             }
         );
