@@ -6,42 +6,71 @@
         },
         "key_data": [
             {
-                "icon": "icons/componente 3.png",
+                "icon": "icons/migracion.jpg",
                 "value": "147.908",
-                "content": "personas desplazadas internamente entraran a Cali"
-            },
-            {
-                "icon": "icons/1-comercializacion.png",
-                "value": "37%",
-                "content": "de las personas desplazadas en 2019 eran niños y jovenes, y viven en las zonas con mayor densidad de poblacion (estratos 1-3)"
+                "content": "personas desplazadas internamente entraron a Cali entre 1985 y 2021"
             },
             {
                 "icon": "icons/componente 3.png",
+                "value": "37%",
+                "content": "de las personas desplazadas en 2019 eran niños y jóvenes. Viven en las zonas con mayor densidad de poblacion (estratos 1-3)"
+            },
+            {
+                "icon": "icons/driver 2.png.png",
                 "value": "62.414",
                 "content": "migrantes venezolanos en 2019"
+            },
+            {
+                "icon": "icons/ventainformal.png",
+                "value": "71%",
+                "content": "de los inmigrantes venezolanos están dedicados al comerico informal"
             }
         ]
     },
     {
         "hightlight": {
-            "icon": "icons/driver 2.png",
-            "content": "La migración nacional y extranjera hacia Cali aumenta el numero de consumidores vulnerables y determina hábitos de consumo"
+            "icon": "icons/driver 4.png",
+            "content": "La alta informalidad laboral y la pobreza monetaria disminuyen la capacidad de compra de alimentos."
         },
         "key_data": [
             {
-                "icon": "icons/componente 3.png",
-                "value": "147.908",
-                "content": "personas desplazadas internamente entraran a Cali"
+                "icon": "icons/ventainformal.png",
+                "value": "45.8%",
+                "content": "Tasa de informalidad laboral (febrero-abril 2019)"
             },
             {
-                "icon": "icons/driver 2.png",
-                "value": "37%",
-                "content": "de las personas desplazadas en 2019 eran niños y jovenes, y viven en las zonas con mayor densidad de poblacion (estratos 1-3)"
+                "icon": "icons/hombredinero.png",
+                "value": "21.9%",
+                "content": "Incidencia de pobreza monetaria en 2019"
             },
             {
-                "icon": "icons/3-tiendas.png",
-                "value": "71%",
-                "content": "dedicados al comerico informal"
+                "icon": "icons/hombresinempleo.png",
+                "value": "12.1%",
+                "content": "Tasa de desempleo (entre septiembre y noviembre de 2019)"
+            }
+        ]
+    },
+    {
+        "hightlight": {
+            "icon": "icons/driver 5.png",
+            "content": "Cali, es una ciudad multicultural con diversa demanda de alimentos y hábitos de consumo."
+        },
+        "key_data": [
+            {
+                "icon": "icons/etnias.png",
+                "content": "Composición étnica en Cali"
+            }
+        ]
+    },
+    {
+        "hightlight": {
+            "icon": "icons/driver 3.png",
+            "content": "Cali es sede regional de gremios, actores públicos, bancos, universidades, una unidad de planeación estratégica interdepartamental y centros de investigación y desarrollo relacionados con actividades productivas."
+        },
+        "key_data": [
+            {
+                "icon": "icons/clusteres.png",
+                "content": "7 clústeres productivos especializados,  de la industria de alimentos "
             }
         ]
     }
