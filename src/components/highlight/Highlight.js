@@ -9,7 +9,7 @@ function Highlight(props) {
             : amount == 3
                 ? "4"
                 : amount == 2
-                    ? "6" : "1"
+                    ? "6" : "6"
             ;
     }
     return (

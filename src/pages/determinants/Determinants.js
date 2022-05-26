@@ -70,7 +70,7 @@ function Determinants() {
             {infographic ?
                 <>
                     <Highlight data={infographic.info} />
-                    <Sources items={infographic.sources} />
+                    {/* <Sources items={infographic.sources} /> */}
                 </>
                 :
                 <></>

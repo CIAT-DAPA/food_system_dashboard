@@ -1,24 +1,47 @@
 [
     {
         "hightlight": {
-            "icon": "icons/driver 2.png",
-            "content": "Cali no es un municipio productor de alimentos, pero es un polo de consumo para el sistema alimentario del suroccidente del pais"
+            "icon": "icons/1-produccion.png",
+            "content": "Cali no es un municipio productor de alimentos, pero es un polo de consumo para el sistema alimentario del suroccidente del pais. Además de constituir el mercado más grande en el Suroccidente, Cali cumple la función de redistribuir alimentos y establecer precios de referencia."
         },
         "key_data": [
             {
-                "icon": "icons/componente 3.png",
+                "icon": "icons/granos.png",
                 "value": "80%",
                 "content": "de los granos secos que se comercializan en la ciudad son importados"
             },
             {
-                "icon": "icons/driver 2.png",
+                "icon": "icons/productor.png",
                 "value": "1317",
                 "content": "productores a pequeña escala en la zona periurbana"
             },
             {
-                "icon": "icons/3-tiendas.png",
+                "icon": "icons/verduras.png",
                 "value": "65%",
                 "content": "de los productos provienen de los departamentos de Cauca y Narino"
+            }
+        ]
+    },
+    {
+        "hightlight": {
+            "icon": "icons/1-almacenamiento.png",
+            "content": "Existen dos centrales mayoristas principales que reciben 41% de los productos alimenticios del Valle del Cauca."
+        },
+        "key_data": [
+            {
+                "icon": "icons/CAVASA.png",
+                "value": "30.000",
+                "content": "toneladas al mes"
+            },
+            {
+                "icon": "icons/SantaE.png",
+                "value": "18-22",
+                "content": "toneladas al mes"
+            },
+            {
+                "icon": "icons/2-disponibilidad.png",
+                "value": "65%",
+                "content": "de la demanda de alimentos en la ciudad cubierta"
             }
         ]
     }

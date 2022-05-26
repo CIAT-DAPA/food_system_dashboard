@@ -6,11 +6,11 @@ function Nav() {
         <div className="container">
             <header className="blog-header py-3">
                 <div className="row flex-nowrap justify-content-between align-items-center">
-                    <div className="col-3 pt-1">
+                    <div className="col-3">
                         {/*<a className="link-secondary" href="#">Subscribe</a>*/}
                     </div>
                     <div className="col-6 text-center">
-                        <a className="blog-header-logo text-dark" href="#/">Sistema alimentario de Cali</a>
+                        {/* <a className="blog-header-logo text-dark" href="#/">Sistema alimentario de Cali</a> */}
                     </div>
                     <div className="col-3 d-flex justify-content-end align-items-center">
                         {/*
@@ -23,14 +23,13 @@ function Nav() {
                 </div>
             </header>
 
-            <div className="nav-scroller py-1 mb-2">
-                <nav className="nav d-flex justify-content-between">
+            {/* <div className="nav-scroller py-1 mb-2"> 
+                <nav className="nav d-flex justify-content-between">*/}
+            <div className="text-center">
+            <nav className="nav d-flex text-center">
+                    <a className="p-2 link-secondary" href="#/">Home</a>
                     <a className="p-2 link-secondary" href="#/determinantes">Determinantes</a>
                     <a className="p-2 link-secondary" href="#/suministro_alimentos">Suministro de alimentos</a>
-                    <a className="p-2 link-secondary" href="#/entorno">Entorno alimentario</a>
-                    <a className="p-2 link-secondary" href="#/consumidor">Consumidor</a>
-                    <a className="p-2 link-secondary" href="#/dietas">Dietas</a>
-                    <a className="p-2 link-secondary" href="#/acercade">Acerca de</a>
                 </nav>
             </div>
         </div>
