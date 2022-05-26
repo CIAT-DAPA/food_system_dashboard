@@ -1,22 +1,22 @@
 [
     {
         "hightlight": {
-            "icon": "icons/1-produccion.png",
+            "icon": "icons/1-produccion.PNG",
             "content": "Cali no es un municipio productor de alimentos, pero es un polo de consumo para el sistema alimentario del suroccidente del pais. Además de constituir el mercado más grande en el Suroccidente, Cali cumple la función de redistribuir alimentos y establecer precios de referencia."
         },
         "key_data": [
             {
-                "icon": "icons/granos.png",
+                "icon": "icons/granos.PNG",
                 "value": "80%",
                 "content": "de los granos secos que se comercializan en la ciudad son importados"
             },
             {
-                "icon": "icons/productor.png",
+                "icon": "icons/productor.PNG",
                 "value": "1317",
                 "content": "productores a pequeña escala en la zona periurbana"
             },
             {
-                "icon": "icons/verduras.png",
+                "icon": "icons/verduras.PNG",
                 "value": "65%",
                 "content": "de los productos provienen de los departamentos de Cauca y Narino"
             }
